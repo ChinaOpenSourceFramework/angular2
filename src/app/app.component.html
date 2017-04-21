@@ -1,3 +1,32 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+	<div class="header">
+		<ul>
+			<li>
+				<a [routerLink]="['/home']">
+    				home
+  				</a>
+  			</li>
+			<li>
+				<a [routerLink]="['/message']">
+    				message
+  				</a>
+  			</li>
+			<li>
+				<a [routerLink]="['/userinfo']">
+    				userinfo
+  				</a>
+  			</li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="left">
+			this is left
+		</div>
+		<div class="right">
+			<main>
+				<router-outlet></router-outlet>
+			</main>
+		</div>	
+	</div>
+</div>
+
